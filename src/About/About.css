@@ -1,9 +1,16 @@
 .about-page-container {
   position: relative;
   display: flex;
+  gap: 4rem;
   flex-direction: column;
   min-height: 100vh;
   background-color: rgba(252, 236, 168, 255);
+  padding: 0 2vw;
+}
+
+.credit-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .credit-row-title {
@@ -22,8 +29,9 @@
   display: flex;
   flex-direction: row;
   margin-top: 2.5vh;
-  margin-bottom: 5vh;
+  
   flex-wrap: wrap;
+
 }
 
 .credit-cell {
@@ -39,7 +47,7 @@
 }
 
 .credit-cell img {
-  width: 30vh; /* Ensure the image covers the container's width */
+  width: 30vh;
   object-fit: cover;
   border-radius: 1vh;
 }
@@ -62,10 +70,13 @@
 }
 
 .thankyou-box {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
   align-self: center;
   text-align: center;
   width: 70vw;
   padding-bottom: 5vh;
+  @media (max-width: 767px){
+    width: 90vw;
+    margin: 6vh 0;
+    padding-bottom: 3vh;
+  }
 }

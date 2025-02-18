@@ -10,16 +10,16 @@ const About = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   
-  
 
-  
 
   return (
     <div className="about-page-container">
       <Navbar />
 
-      <div className="credit-row-title">Artists</div>
-      <div className="credit-row">
+      
+      <div className="credit-container">
+        <div className="credit-row-title">Artists</div>
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://www.linkedin.com/in/tyra-pasion/"
@@ -52,7 +52,11 @@ const About = () => {
         </a>
       </div>
 
-      <div className="credit-row-title">Writers</div>
+      
+      </div>
+
+      <div className="credit-container">
+        <div className="credit-row-title">Writers</div>
       <div className="credit-row">
         <a
           className="credit-cell"
@@ -94,7 +98,10 @@ const About = () => {
           <div className="credit-title">Script Editor</div>
         </a>
       </div>
-
+      </div>
+      
+      
+      <div className="credit-container">
       <div className="credit-row-title">Developers</div>
       <div className="credit-row">
         <a
@@ -127,9 +134,11 @@ const About = () => {
           <div className="credit-title">Senior Developer</div>
         </a>
       </div>
+      </div>
 
-      <div className="credit-row-title">Project Managers</div>
-      <div className="credit-row">
+      <div className="credit-container">
+        <div className="credit-row-title">Project Managers</div>
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://www.linkedin.com/in/jwmalegni/"
@@ -149,10 +158,12 @@ const About = () => {
           <div className="credit-name">Nicolas Valiente</div>
           <div className="credit-title">Senior Project Manager</div>
         </a>
+        </div>
       </div>
 
-      <div className="credit-row-title">Special Thanks</div>
-      <div className="credit-row">
+      <div className="credit-container">
+        <div className="credit-row-title">Special Thanks</div>
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://www.linkedin.com/in/mathewalangadan/"
@@ -179,8 +190,8 @@ const About = () => {
           <img className="border-4 border-custom-purple" src="credits/Mohammed.jpg" alt="Mohammed Picture" />
           <div className="credit-name">Mohammed Ali</div>
         </a>
-      </div>
-      <div className="credit-row">
+        </div>
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://www.linkedin.com/in/josephcabezas/"
@@ -207,10 +218,15 @@ const About = () => {
           <img src="https://docs.ufosc.org/img/logo.png" />
           <div className="credit-name">UF Open Source Club</div>
         </a>
+        </div>
       </div>
 
-      <div className="credit-row-title">Music</div>
-      <div className="credit-row">
+      
+
+
+      <div className="credit-container">
+        <div className="credit-row-title">Music</div>
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://dova-s.jp/bgm/play20356.html"
@@ -220,6 +236,7 @@ const About = () => {
           <div className="credit-name">Shimtone - シムトーン</div>
           <div className="credit-title">Menu Music </div>
         </a>
+      </div>
       </div>
 
       <div className="thankyou-box">
